@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="app.css"/>
+		<title>
+			Rippleton
+		</title>
+	</head>
+	<body>
+		<h1 class="main_header">Rippleton</h1>
+		  <script type="text/javascript">
+		  	navigator.ServiceWorker.register("/sw.js").then(function(){
+		  		console.log("Service Worker succesfully");
+		  	}, function(err){
+		  		console.log(err);
+		  	});
+		  </script>
+	</body>
+</html>
